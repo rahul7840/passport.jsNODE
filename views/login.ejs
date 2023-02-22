@@ -1,0 +1,25 @@
+<%- include('partial/header') %>
+
+      <div class="container mt-5">
+        <h1 class=" font-weight-bold">Login</h1><hr>      
+        <div class="row">
+          <div class="col-sm-8">
+            <p class=" font-weight-bold">Welcome back! Please enter your credentials to access your account</p>
+            <div class="card">
+              <div class="card-body">
+                <!-- Makes POST request to /register route -->
+                <form action="/login" method="POST">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" name="username">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password">
+                  </div>
+                  <button type="submit" class="btn btn-info">Login</button>
+                </form>
+      
+              </div>
+            </div>
+          </div>
